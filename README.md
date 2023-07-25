@@ -7,4 +7,4 @@ A web application which allows users to search for clothing products and buys th
 3. `npm start` or `yarn start` for running application
 
 ##### Live Website Hosted
-https://crown-trends.herokuapp.com/
+https://wonderful-duckanoo-d9931d.netlify.app/
