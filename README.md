@@ -9,4 +9,4 @@ A web application which allows users to search for clothing products and buys th
 ##### Live Website Hosted
 https://wonderful-duckanoo-d9931d.netlify.app/
 
-To view the same coes done using hooks and latest dpeendencies visit https://github.com/EldhoseKuriakose/Crown
+To view the same project done using hooks and latest dependencies visit https://github.com/EldhoseKuriakose/Crown
