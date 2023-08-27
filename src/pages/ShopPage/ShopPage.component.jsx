@@ -6,6 +6,11 @@ import CollectionsOverviewContainer from '../../components/CollectionsOverview/C
 import CollectionPageContainer from '../CollectionPage/CollectionPage.container';
 
 class ShopPage extends React.Component {
+    /**
+     * Lifecycle method that is called after the component has been mounted.
+     * It triggers the asynchronous action to fetch collections using the `fetchCollectionsStartAsync` function from props.
+     * @returns None
+     */
     componentDidMount() {
         const { fetchCollectionsStartAsync } = this.props;
         fetchCollectionsStartAsync();

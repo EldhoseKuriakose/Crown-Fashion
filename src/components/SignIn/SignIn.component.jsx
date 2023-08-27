@@ -14,6 +14,11 @@ class SignIn extends React.Component {
         }
     }
 
+    /**
+     * Handles the form submission event by signing in the user with the provided email and password.
+     * @param {{Event}} event - The form submission event.
+     * @returns None
+     */
     handleSubmit = async event => {
         event.preventDefault();
         const { email, password } =this.state;
@@ -26,6 +31,11 @@ class SignIn extends React.Component {
         }
     }
 
+    /**
+     * Handles the change event for an input element and updates the corresponding state value.
+     * @param {{Event}} event - The change event object.
+     * @returns None
+     */
     handleChange = event => {
         const { value, name } = event.target;
 

@@ -16,6 +16,11 @@ class SignUp extends React.Component {
         }
     }
 
+    /**
+     * Handles the form submission event for user registration.
+     * @param {{Event}} event - The form submission event.
+     * @returns None
+     */
     handleSubmit = async event => {
         event.preventDefault();
         const { displayName, email, password, confirmPassword } = this.state;
@@ -44,6 +49,11 @@ class SignUp extends React.Component {
         }
     }
 
+    /**
+     * Handles the change event for form inputs and updates the state accordingly.
+     * @param {{Event}} event - The change event object.
+     * @returns None
+     */
     handleChange = event => {
         const { name, value } = event.target;
 

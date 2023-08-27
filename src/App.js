@@ -15,6 +15,12 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 class App extends React.Component {
   unSubscribeFromAuth = null; 
 
+  /**
+   * Lifecycle method that is called after the component has been mounted.
+   * It sets up an observer on the authentication state and updates the current user
+   * in the component's state accordingly.
+   * @returns None
+   */
   componentDidMount() {
     const { setCurrentUser } = this.props;
 
@@ -33,6 +39,11 @@ class App extends React.Component {
     });
   }
 
+  /**
+   * Lifecycle method that is called when the component is about to be unmounted from the DOM.
+   * It unsubscribes from the authentication event listener.
+   * @returns None
+   */
   componentWillUnmount() {
     this.unSubscribeFromAuth();
   }
